@@ -11,7 +11,7 @@ Your goal is to:
 - Evaluate what your system gets right and wrong
 - Reflect on how this mirrors real world AI recommenders
 
-Replace this paragraph with your own summary of what your version does.
+This version builds a transparent content-based music recommender that scores each song against a user profile and prints the top matches with explanations. I also ran the recommender on three normal profiles and two adversarial edge-case profiles to see how the scoring logic behaves when preferences conflict.
 
 ---
 
@@ -98,6 +98,30 @@ Use this section to document the experiments you ran. For example:
 - What happened when you changed the weight on genre from 2.0 to 0.5
 - What happened when you added tempo or valence to the score
 - How did your system behave for different types of users
+
+### Evaluation Screenshots
+
+I captured the terminal output for each profile and saved it as a screenshot so the ranking behavior is easy to review.
+
+#### High-Energy Pop
+
+![High-Energy Pop recommendation output](screenshots/high_energy_pop.png)
+
+#### Chill Lofi
+
+![Chill Lofi recommendation output](screenshots/chill_lofi.png)
+
+#### Deep Intense Rock
+
+![Deep Intense Rock recommendation output](screenshots/deep_intense_rock.png)
+
+#### System Eval: Conflicting Acoustic EDM
+
+![Conflicting Acoustic EDM recommendation output](screenshots/system_eval_conflicting_acoustic_edm.png)
+
+#### System Eval: Boundary Extremist
+
+![Boundary Extremist recommendation output](screenshots/system_eval_boundary_extremist.png)
 
 ---
 

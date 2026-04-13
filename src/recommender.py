@@ -134,15 +134,15 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     song_acousticness = float(song.get("acousticness", 0.0))
 
     if user_genre and song_genre == user_genre:
-        score += 2.0
-        reasons.append("genre match (+2.0)")
+        score += 1.0
+        reasons.append("genre match (+1.0)")
 
     if user_mood and song_mood == user_mood:
         score += 2.5
         reasons.append("mood match (+2.5)")
 
     energy_gap = abs(song_energy - user_energy)
-    energy_points = max(0.0, 2.0 - (energy_gap * 4.0))
+    energy_points = max(0.0, 2.0 - (energy_gap * 4.0)) * 2.0
     if energy_points > 0:
         score += energy_points
         reasons.append(f"energy closeness (+{energy_points:.1f})")

@@ -15,14 +15,37 @@ except ImportError:
     from recommender import load_songs, recommend_songs
 
 
-def main() -> None:
-    songs = load_songs("data/songs.csv") 
-    # Starter example profile
-    user_prefs = {"genre": "pop", "mood": "happy", "energy": 0.8}
+PROFILES = [
+    {
+        "name": "High-Energy Pop",
+        "prefs": {"genre": "pop", "mood": "happy", "energy": 0.9, "likes_acoustic": False},
+    },
+    {
+        "name": "Chill Lofi",
+        "prefs": {"genre": "lofi", "mood": "chill", "energy": 0.35, "likes_acoustic": True},
+    },
+    {
+        "name": "Deep Intense Rock",
+        "prefs": {"genre": "rock", "mood": "intense", "energy": 0.95, "likes_acoustic": False},
+    },
+    {
+        "name": "System Eval: Conflicting Acoustic EDM",
+        "prefs": {"genre": "electronic", "mood": "energetic", "energy": 0.9, "likes_acoustic": True},
+    },
+    {
+        "name": "System Eval: Boundary Extremist",
+        "prefs": {"genre": "pop", "mood": "neutral", "energy": 0.5, "likes_acoustic": False},
+    },
+]
 
+
+def print_recommendations(profile_name: str, user_prefs: dict, songs: list[dict]) -> None:
     recommendations = recommend_songs(user_prefs, songs, k=5)
 
-    print("\nTop recommendations:\n")
+    print(f"\n=== {profile_name} ===")
+    print(f"Profile: {user_prefs}")
+    print("Top recommendations:\n")
+
     for idx, rec in enumerate(recommendations, start=1):
         song, score, explanation = rec
         reasons = [part.strip() for part in explanation.split(";") if part.strip()]
@@ -36,6 +59,13 @@ def main() -> None:
         else:
             print("   - No specific reasons provided")
         print()
+
+
+def main() -> None:
+    songs = load_songs("data/songs.csv") 
+
+    for profile in PROFILES:
+        print_recommendations(profile["name"], profile["prefs"], songs)
 
 
 if __name__ == "__main__":
