@@ -1,19 +1,19 @@
-id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
-1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18
-2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71
-3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10
-4,Library Rain,Paper Lanterns,lofi,chill,0.35,72,0.60,0.58,0.86
-5,Gym Hero,Max Pulse,pop,intense,0.93,132,0.77,0.88,0.05
-6,Spacewalk Thoughts,Orbit Bloom,ambient,chill,0.28,60,0.65,0.41,0.92
-7,Coffee Shop Stories,Slow Stereo,jazz,relaxed,0.37,90,0.71,0.54,0.89
-8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
-9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
-10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
-11,City Cipher,North Avenue,hip hop,confident,0.79,96,0.68,0.85,0.12
-12,Moonlit Sonata,Aria Vale,classical,melancholic,0.22,68,0.34,0.18,0.96
-13,Island Morning,Palm Current,reggae,uplifting,0.63,88,0.83,0.72,0.44
-14,Iron Anthem,Grim Forge,metal,aggressive,0.95,170,0.29,0.57,0.03
-15,Dusty Roads,Cedar Miles,country,nostalgic,0.51,102,0.62,0.64,0.67
-16,Neon Pulse, ,edm,euphoric,0.90,128,0.86,0.91,0.08
-17,Velvet Letters,Noir Harbor,r&b,romantic,0.58,92,0.74,0.76,0.39
-18,Autumn Pages,Willow Finch,folk,reflective,0.33,84,0.57,0.46,0.88
+id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness,popularity,release_year,mood_tags,instrumentalness,speechiness
+1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18,82,2022,uplifting|energetic|feel-good,0.12,0.04
+2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71,65,2021,chill|relaxing|focused,0.85,0.08
+3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10,58,2005,intense|powerful|driving,0.15,0.12
+4,Library Rain,Paper Lanterns,lofi,chill,0.35,72,0.60,0.58,0.86,72,2020,ambient|calming|study,0.88,0.05
+5,Gym Hero,Max Pulse,pop,intense,0.93,132,0.77,0.88,0.05,87,2023,euphoric|energetic|pumped,0.08,0.03
+6,Spacewalk Thoughts,Orbit Bloom,ambient,chill,0.28,60,0.65,0.41,0.92,48,2018,meditative|ethereal|spacey,0.92,0.02
+7,Coffee Shop Stories,Slow Stereo,jazz,relaxed,0.37,90,0.71,0.54,0.89,55,2015,smooth|jazzy|sophisticated,0.75,0.25
+8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22,71,2019,moody|retro|atmospheric,0.42,0.06
+9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78,68,2021,peaceful|concentrative|mellow,0.86,0.07
+10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35,79,2022,upbeat|indie|catchy,0.28,0.08
+11,City Cipher,North Avenue,hip hop,confident,0.79,96,0.68,0.85,0.12,76,2020,confident|urban|rhythmic,0.18,0.42
+12,Moonlit Sonata,Aria Vale,classical,melancholic,0.22,68,0.34,0.18,0.96,42,1995,melancholic|classical|intricate,0.95,0.01
+13,Island Morning,Palm Current,reggae,uplifting,0.63,88,0.83,0.72,0.44,61,2008,uplifting|tropical|vibrant,0.35,0.35
+14,Iron Anthem,Grim Forge,metal,aggressive,0.95,170,0.29,0.57,0.03,64,2012,aggressive|heavy|intense,0.22,0.14
+15,Dusty Roads,Cedar Miles,country,nostalgic,0.51,102,0.62,0.64,0.67,53,1998,nostalgic|storytelling|acoustic,0.62,0.28
+16,Neon Pulse, ,edm,euphoric,0.90,128,0.86,0.91,0.08,84,2023,euphoric|driving|pulsing,0.35,0.02
+17,Velvet Letters,Noir Harbor,r&b,romantic,0.58,92,0.74,0.76,0.39,73,2014,romantic|smooth|soulful,0.48,0.38
+18,Autumn Pages,Willow Finch,folk,reflective,0.33,84,0.57,0.46,0.88,51,2010,reflective|acoustic|artistic,0.68,0.16
